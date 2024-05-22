@@ -5,7 +5,6 @@ using UnityEngine;
 public class MovimentController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public bool inAction;
     public Transform movePoint;
     public LayerMask whatStopMovement;
     public Animator animator;
@@ -19,9 +18,6 @@ public class MovimentController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(inAction)
-            return;
-
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
 
         if(Vector3.Distance(transform.position, movePoint.position) <= .005f)

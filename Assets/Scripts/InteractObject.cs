@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractObject : MonoBehaviour
 {
     public GameObject menuObject;
+    public GameObject playerInRange;
     bool onRange;
 
     void OnTriggerEnter2D(Collider2D col)
@@ -12,6 +13,7 @@ public class InteractObject : MonoBehaviour
         if(col.tag == "Player")
         {
             onRange = true;
+            col.GetComponent<PlayerInteractions>().interactionIcon.SetActive(true);
         }
     }
 
@@ -20,6 +22,7 @@ public class InteractObject : MonoBehaviour
         if(col.tag == "Player")
         {
             onRange = false;
+            col.GetComponent<PlayerInteractions>().interactionIcon.SetActive(false);
         }
     }
 
