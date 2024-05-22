@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3129025113108824384}
   - component: {fileID: 1194888333446515185}
   - component: {fileID: 741787751258498767}
+  - component: {fileID: 3372678723377234085}
   m_Layer: 5
   m_Name: ItemTag
   m_TagString: Untagged
@@ -79,6 +80,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3372678723377234085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972961928739122685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa18c811460c204a9bd7d0d51df4b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameTxt: {fileID: 8634888248255015096}
+  valueTxt: {fileID: 1748850231764887791}
+  spriteImg: {fileID: 8849915424140675810}
+  buyBtn: {fileID: 5046641661795609573}
+  equipBtn: {fileID: 8537613151379988084}
 --- !u!1 &3212796183646713977
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +620,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 937592367089479736}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3372678723377234085}
+        m_TargetAssemblyTypeName: ItemTag, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7154730437558378341
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +753,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8777394938249278798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3372678723377234085}
+        m_TargetAssemblyTypeName: ItemTag, Assembly-CSharp
+        m_MethodName: Equip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8109372516323684119
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,8 +800,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -40}
-  m_SizeDelta: {x: 125, y: 125}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &2770300050832029625
 CanvasRenderer:

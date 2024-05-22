@@ -10,7 +10,7 @@ public class PaperDoll : MonoBehaviour
     public string spriteName;
     private Sprite[] spriteArray;
     
-    void LoadSprites()
+    public void LoadSprites()
     {
         spriteArray = Resources.LoadAll<Sprite>(spriteName);
     }
