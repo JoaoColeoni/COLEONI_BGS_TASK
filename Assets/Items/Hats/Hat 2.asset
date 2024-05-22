@@ -15,5 +15,5 @@ MonoBehaviour:
   prefabName: Wizard Hat
   sprite: {fileID: 165529292, guid: 41a638a3f3a321e4099cb7919ca8f5e5, type: 3}
   value: 250
-  spriteSheetName: char_a_p1_5hat_pfht_v04
+  spriteSheetName: char_a_p1_5hat_pnty_v04
   itemType: 0

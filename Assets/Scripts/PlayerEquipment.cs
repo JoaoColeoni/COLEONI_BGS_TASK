@@ -10,21 +10,21 @@ public class PlayerEquipment : MonoBehaviour
     {
         if(item.itemType == ItemType.Hair)
         {
-            hairObject.spriteName = item.prefabName;
-            hairObject.gameObject.SetActive(true);
+            hairObject.spriteName = item.spriteSheetName;
             hairObject.LoadSprites();
+            hairObject.gameObject.SetActive(true);
         }
         else if(item.itemType == ItemType.Hat)
         {
-            hatObject.spriteName = item.prefabName;
-            hatObject.gameObject.SetActive(true);
+            hatObject.spriteName = item.spriteSheetName;
             hatObject.LoadSprites();
+            hatObject.gameObject.SetActive(true);
         }
         else if(item.itemType == ItemType.Suit)
         {
-            suitObject.spriteName = item.prefabName;
-            suitObject.gameObject.SetActive(true);
+            suitObject.spriteName = item.spriteSheetName;
             suitObject.LoadSprites();
+            suitObject.gameObject.SetActive(true);
         }
     }
 }
