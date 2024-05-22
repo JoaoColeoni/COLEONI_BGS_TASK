@@ -9,13 +9,17 @@ public class PaperDoll : MonoBehaviour
     public SpriteRenderer myRenderer;
     public string spriteName;
     private Sprite[] spriteArray;
-    void Start()
+    
+    void LoadSprites()
     {
         spriteArray = Resources.LoadAll<Sprite>(spriteName);
     }
 
     void Update()
     {
+        if(!gameObject.activeSelf)
+            return;
+
         String[] aux = doolRenderer.sprite.name.Split("_");
         myRenderer.sprite = spriteArray[int.Parse(aux[aux.Length - 1])];
     }

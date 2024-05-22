@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d3b69cf7aa0e04488958031e948829, type: 3}
+  m_Name: Hair 1
+  m_EditorClassIdentifier: 
+  prefabName: Medium Hair
+  sprite: {fileID: -1060552401, guid: 4be3d2949dbf3894b9e0838155454fb4, type: 3}
+  value: 100
+  spriteSheetName: char_a_p1_4har_bob1_v01
+  itemType: 1

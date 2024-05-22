@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d3b69cf7aa0e04488958031e948829, type: 3}
+  m_Name: Hat 1
+  m_EditorClassIdentifier: 
+  prefabName: Winter Hat
+  sprite: {fileID: 465864723, guid: 7818ba60ab746e64da91caf8399565b0, type: 3}
+  value: 125
+  spriteSheetName: char_a_p1_5hat_pfht_v04
+  itemType: 0
